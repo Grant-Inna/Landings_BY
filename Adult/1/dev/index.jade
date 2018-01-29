@@ -1,0 +1,24 @@
+doctype
+html
+    head
+        include m-head
+        +head()
+    body.lbody
+        include top-form
+        .wrapper
+            include m-header
+            +header( 'СМОТРЕТЬ' )
+            .wrapper__form
+                .wrapper__main
+                    .relation__main
+                    .relation__mainContent
+                        // First screen
+                        include check-button
+                        // Second screen
+                        .button__container
+                            include text-check
+                            include m-button
+                            +button( 'СМОТРЕТЬ', '-' )
+                button.button__cancel( onclick="document.getElementById('frm-cancel').submit(); return false;" ) Отмена
+            include footer
+

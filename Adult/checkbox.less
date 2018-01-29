@@ -1,0 +1,82 @@
+/* index */
+.wrapper__main {
+  position: relative;
+  z-index: 1;
+  min-height: 100px;
+  height: auto;
+
+  width: 95%;
+  .xxs( width, 85% );
+
+  .landscape( height, 70% );
+  .landscape-h( @lg, height, auto )
+}
+
+/* first screen */
+.button__check {
+  .flex;
+  .items-center;
+  .justify-evenly;
+  height: 70px;
+  min-height: 40px;
+  max-height: 80px;
+  width: 250px;
+  min-width: 200px;
+  max-width: 380px;
+  .xxs-b({
+    width: 90%;
+    height: 45%;
+  });
+  margin: 28% auto 5px;
+  transition: .05s ease-in-out;
+
+  .landscape( margin, 10% auto 0 );
+  .landscape-h( @md, margin, 28% auto 5px);
+
+}
+.check__container {
+  .column;
+  .justify-end;
+  align-content: end;
+  height: 5rem;
+
+  .check__big {
+    font-size: 3.1rem;
+    font-weight: 600;
+    font-variant: all-small-caps;
+  }
+  .check__link {
+    font-size: 1.6rem;
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 1px solid inherit;
+  }
+}
+
+.check__label {
+  width: 5rem;
+  height: 5rem;
+}
+.check__input {
+  opacity: 0;
+}
+.check__checked {}
+.check__container {}
+.check__big {}
+.check__link {}
+
+/* second screen */
+.button__container {
+  //.column-center;
+
+}
+.checked__textContainer {
+  .flex;
+}
+.checked__label {
+  width: 1rem;
+  height: 1rem;
+}
+.checked__input {}
+.checked__checked {}
+.checked__text  {}
