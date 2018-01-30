@@ -834,10 +834,19 @@ a {
   outline: none;
 }
 
+.button__text {
+  margin-left: auto;
+  .xxs-o( @p, margin-left, 0 );
+  .sm-o( @l, margin-left, 0 );}
+
+.button__icon {
+  margin-right: auto;
+  .xxs-o( @p, margin-right, 0 );
+  .sm-o( @l, margin-right, 0 );}
+
 #submitButton:disabled {
   background: rgb(110, 110, 110);
 }
-
 
 .button__cancel {
   margin: 40px auto -50px;
