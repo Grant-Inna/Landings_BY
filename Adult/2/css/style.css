@@ -1730,6 +1730,10 @@ a {
   .wrapper__form {
     padding-bottom: 0;
   }
+
+  .checked__textContainer {
+    margin-bottom: 3px;
+  }
 }
 
 @media screen and (min-height: 359px) and (orientation: landscape) {
@@ -1749,6 +1753,10 @@ a {
   .wrapper__form {
     padding-bottom: 30px;
   }
+
+  .checked__textContainer {
+    margin-bottom: 7px;
+  }
 }
 
 @media screen and (min-height: 800px) and (orientation: landscape) {
@@ -1766,5 +1774,9 @@ a {
   .button__cancel {
     margin: 35px auto 0;
     height: 28px;
+  }
+
+  .checked__textContainer {
+    margin-bottom: 10px;
   }
 }
