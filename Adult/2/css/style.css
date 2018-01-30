@@ -1022,7 +1022,7 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  height: 80px;
+  height: 45%;
   min-height: 60px;
   max-height: 100px;
   width: 280px;
@@ -1724,7 +1724,7 @@ a {
   }
 
   .button__cancel {
-    margin: 3px auto 0;
+    margin: 5px auto 0;
     height: 23px;
   }
 
@@ -1789,7 +1789,7 @@ a {
 
 @media screen and (min-height: 410px) and (orientation: landscape) {
   .button__container {
-    height: auto;
+    height: 40%;
   }
 
   .button__cancel {
