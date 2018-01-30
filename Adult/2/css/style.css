@@ -1247,14 +1247,14 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: #00c8ae;
   color: #ffffff;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  padding: 6px;
+  padding: 3px;
   margin-bottom: 10px;
 }
 
@@ -1264,6 +1264,7 @@ a {
   position: relative;
   width: 2rem;
   height: 2rem;
+  margin-right: 7px;
 }
 
 .checked__input {
@@ -1624,6 +1625,10 @@ a {
     padding-top: 30%;
   }
 
+  .checked__textContainer {
+    padding: 6px;
+  }
+
   .checked__text {
     font-size: 1.6rem;
   }
@@ -1719,7 +1724,7 @@ a {
   }
 
   .button__container {
-    height: 50px;
+    height: 30px;
   }
 
   .button__cancel {

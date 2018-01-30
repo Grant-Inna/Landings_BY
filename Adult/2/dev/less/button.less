@@ -2,7 +2,7 @@
 .checked__textContainer {
   .flex;
   .items-center;
-  .justify-evenly;
+  .justify-center;
 
   background: @back-button-container-image;
   color: @color-button-buy;
@@ -10,7 +10,10 @@
   border-top-left-radius: @border-r-button-container;
   border-top-right-radius: @border-r-button-container;
 
-  padding: 6px;
+  padding: 3px;
+  .xxs( padding, 6px );
+
+
   margin-bottom: 10px;
   .landscape( margin-bottom, 3px);
   .landscape-h( @xxs, margin-bottom, 7px );
@@ -28,6 +31,7 @@
   position: relative;
   width: 2rem;
   height: 2rem;
+  margin-right: 7px;
 }
 .checked__input {
   position: absolute;
