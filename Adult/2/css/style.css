@@ -1271,6 +1271,10 @@ a {
   opacity: 0;
 }
 
+.checked__text {
+  font-size: 1.5rem;
+}
+
 /* button */
 
 .button__container {
@@ -1618,6 +1622,10 @@ a {
 
   .relation {
     padding-top: 30%;
+  }
+
+  .checked__text {
+    font-size: 1.6rem;
   }
 }
 
