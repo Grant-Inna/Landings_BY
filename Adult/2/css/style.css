@@ -1192,7 +1192,7 @@ a {
 
 .relation {
   height: 0;
-  padding-top: 33.33333333%;
+  padding-top: 25%;
 }
 
 .relation__content {
@@ -1614,6 +1614,10 @@ a {
 
   .checked__textContainer {
     width: 90%;
+  }
+
+  .relation {
+    padding-top: 30%;
   }
 }
 
