@@ -5,7 +5,7 @@ mixin button( text, icon )
                 input#mainCheckbox.check__input( type="checkbox" )
                 .check__checked
             .check__container
-                span.check__big Я СОГЛАСЕН
+                label.check__big( for="mainCheckbox" ) Я СОГЛАСЕН
                 a.check__link( href="http://videomeo.by/static/mts-by-rules.html", target="_blank" )
                     div с условиями подписки
         button#submitButton.button__buy( onclick="document.getElementById('frm-btn').submit(); return false;" )
