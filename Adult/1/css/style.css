@@ -1724,8 +1724,8 @@ a {
   }
 
   .button__container {
-    height: 50px;
-    min-height: 50px;
+    height: 60px;
+    min-height: 60px;
   }
 
   .button__cancel {
@@ -1770,7 +1770,7 @@ a {
 
   .button__container {
     height: 40%;
-    min-height: 60px;
+    min-height: 70px;
   }
 
   .button__cancel {
