@@ -1,7 +1,6 @@
 var gulp = require('gulp'),
     less = require('gulp-less'),
     jade = require('gulp-jade'),
-    base64 = require('gulp-base64-inline'),
     groupMedia = require('gulp-group-css-media-queries'),
     autoprefixer = require('gulp-autoprefixer'),
     cleanCSS = require('gulp-clean-css'),
@@ -9,7 +8,6 @@ var gulp = require('gulp'),
     rename = require("gulp-rename"),
     browserSync = require("browser-sync").create(),
     sourcemaps = require("gulp-sourcemaps"),
-    copy = require('copy'),
     notify = require("gulp-notify");
 
 
@@ -24,29 +22,29 @@ gulp.task( 'browser', function() {
 gulp.task('imageMIN', function() {
     return gulp.src( 'images/*.{png,jpg,jpeg,svg}' )
         .pipe(imagemin())
-        .pipe(gulp.dest( './images/' ))
+        .pipe(gulp.dest( '../images/' ))
         .pipe(notify('Images Compress Success!'));
 });
 
 
 gulp.task('CSS', function() {
-    return gulp.src( 'style.less' )
+    return gulp.src( 'less/style.less' )
         .pipe(sourcemaps.init())
         .pipe(less())
-        .pipe(base64())
         .pipe(groupMedia())
         .pipe(autoprefixer({browsers: ['last 5 versions', '> 2%']}))
+        .pipe(gulp.dest( '../css/' ))
         .pipe(cleanCSS())
         .pipe(rename({ suffix: '.min' }))
-        .pipe(sourcemaps.write('dev/'))
-        .pipe(gulp.dest( '../' ))
+        .pipe(sourcemaps.write('../dev/'))
+        .pipe(gulp.dest( '../css/' ))
         .pipe(notify('CSS Success!'));
 });
 
 
 gulp.task('watch_CSS', ['browser'], function() {
-    gulp.watch('*.less', ['CSS']);
-    gulp.watch('*.less').on('change', browserSync.reload)
+    gulp.watch('less/*.less', ['CSS']);
+    gulp.watch('less/*.less').on('change', browserSync.reload)
 });
 
 
@@ -55,15 +53,19 @@ gulp.task('watch_imageMIN', function() {
     gulp.watch('images/*.{png,jpg,jpeg,svg}').on('change', browserSync.reload)
 });
 
-gulp.task('default', ['jade', 'CSS', 'watch_CSS', 'imageMIN']);
+gulp.task('default', ['jade', 'watch_JADE', 'CSS', 'watch_CSS', 'imageMIN']);
 gulp.task('images', ['imageMIN', 'watch_imageMIN']);
 
 
+gulp.task('watch_JADE', ['browser'], function() {
+    gulp.watch('*.jade', ['jade']);
+    gulp.watch('*.jade').on('change', browserSync.reload)
+});
 
 gulp.task('jade', function() {
     return gulp.src( 'index.jade' )
         .pipe(jade())
-        //.pipe(rename( 'order.html' ))
-        .pipe(gulp.dest( '../' ));
+        .pipe(gulp.dest( '../' ))
+        .pipe(notify('JADE Success!'));
 });
 

@@ -1,33 +1,10 @@
 /* index */
-.wrapper__main {
-  position: relative;
-  z-index: 1;
-  min-height: 100px;
-  height: auto;
-
-  width: 95%;
-  .xxs( width, 85% );
-
-  .landscape( height, 70% );
-  .landscape-h( @lg, height, auto )
-}
 
 /* first screen */
 .button__check {
   .flex;
   .items-center;
   .justify-evenly;
-  height: 80px;
-  min-height: 60px;
-  max-height: 100px;
-  width: 280px;
-  min-width: 240px;
-  max-width: 380px;
-  .xxs-b({
-    width: 90%;
-    height: 45%;
-  });
-  //margin: 28% auto 5px;
   transition: .05s ease-in-out;
   transform: scale(1);
   opacity: 1;
@@ -48,10 +25,12 @@
     font-variant: all-small-caps;
   }
   .check__link {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     text-decoration: none;
-    padding-bottom: 2px;
-    border-bottom: 1px solid inherit;
+    border-bottom: 1px solid @color-button-buy;
+    div {
+      margin-bottom: 1px;
+    }
   }
 }
 
@@ -84,50 +63,65 @@
 .check__link {}
 
 #mainCheckbox:checked + .check__checked { display: flex }
+#secondCheckbox:checked + .checked__checked { display: flex }
 
 
 /* second screen */
-.button__container {
-  //.column-center;
 
-}
 .checked__textContainer {
   .flex;
+  opacity: 0;
+  transform: scale(0);
 }
 .checked__label {
-  width: 1rem;
-  height: 1rem;
 }
 .checked__input {}
-.checked__checked {}
-.checked__text  {}
+.checked__checked {
+  .check__checked;
+  &:after { font-size: 1.6rem; }
+}
+.checked__text  {
+  a {
+  text-decoration: none; }
+}
 
 
 
 /* animation */
 
 .fadeOut {
-  animation: out .6s;
-  animation-fill-mode: forwards;  }
+  animation: out .5s;
+  animation-fill-mode: forwards;
+}
 
 @keyframes out {
   0% {
     transform: scale(1);
     opacity: 1;
   }
-  90% {
-    transform: scale(.5);
-    opacity: .5;
-  }
   100% {
     transform: scale(0);
     opacity: 0;
   }
-           }
+}
+
 
 .fadeIn {
-  animation: out .65s;
-  animation-direction: reverse;
+  animation: in .6s;
   animation-fill-mode: forwards;
-  z-index: 9999;
+}
+
+@keyframes in {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  40% {
+    transform: scale(.9);
+    opacity: .9;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }

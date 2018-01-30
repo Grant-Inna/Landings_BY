@@ -779,8 +779,9 @@ a {
   .xxs-h(@sm, @p, { display: block; });
 }
 
-.button__buy {
+.button__container {
   .flex-center;
+  position: relative;
   height: 80px;
   min-height: 60px;
   max-height: 100px;
@@ -792,32 +793,37 @@ a {
     height: 45%;
   });
 
-  margin: 28% auto 5px;
-
   font-size: 3rem;
   font-weight: 600;
 
   transition: .05s ease-in-out;
   outline: none;
+}
+.checked__textContainer {
+  width: 280px;
+  min-width: 240px;
+  max-width: 380px;
+  .xxs-b({ width: 90%; });
+  font-size: 1.7rem;
 
-  .button__text {
-    .landscape( margin-left, auto )
-  }
+  transition: .05s ease-in-out;
+}
+
+.button__buy, .button__check {
+  position: absolute;
+  .full-size;
+  top: 0;
+  left: 0;
+  background: inherit;
+  border: none;
+  outline: none;
+}
+
+#submitButton:disabled {
+  background: rgb(110, 110, 110);
 }
 
 
-/*.button__price {
-  margin: 0 auto;
-  font-size: 2.2rem;
-  .flex-center;
-  width: 80%;
-  max-width: 300px;
-
-  height: 30px;
-
-  .landscape( height, 25px );
-  .landscape-h(@xxs, height, 30px )
-}*/
 .button__cancel {
   margin: 40px auto -50px;
   font-size: 2rem;
@@ -876,11 +882,14 @@ a {
   .md( font-size, 10px );
 
   height: 35px;
-  .landscape-h(@lg, height, 40px );
+  .landscape-block-h(@lg, {
+    height: 40px;
+    padding: 5px 10px;
+  });
 
   /* portrait */
   .xxs-h(@sm, @p, {
-    padding: 0 10px;
+    padding: 3px 10px;
     height: 35px;
   });
   .xs-h(@md, @p, {
@@ -898,9 +907,4 @@ a {
   });
 }
 
-.relation__mainContent {
-  .full-size;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+
