@@ -1771,8 +1771,8 @@ a {
   }
 
   .button__container {
-    height: 25px;
-    min-height: 25px;
+    height: 50px;
+    min-height: 50px;
   }
 
   .button__cancel {
@@ -1804,7 +1804,7 @@ a {
 
   .button__container {
     height: 40%;
-    min-height: 40px;
+    min-height: 60px;
   }
 
   .button__cancel {
@@ -1848,10 +1848,6 @@ a {
 }
 
 @media screen and (min-height: 660px) and (orientation: landscape) {
-  .button__container {
-    min-height: 60px;
-  }
-
   .button__cancel {
     margin: 30px auto 0;
     height: 30px;
