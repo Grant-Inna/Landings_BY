@@ -1669,11 +1669,11 @@ a {
 
   .button__cancel {
     margin: 3px auto 0;
-    height: 15px;
+    height: 12px;
   }
 
   .wrapper__form {
-    margin-top: 3px;
+    margin-top: 1px;
   }
 
   .wrapper__form {
