@@ -1,3 +1,5 @@
+/* top extra block */
+
 
 @back-header-extra-image: rgb(255, 255, 255);
 @back-header-extra-position: center;
@@ -24,12 +26,17 @@
   .xxs-h(@lg, @p, { // iPhone X
     margin-top: 20px;
     margin-bottom: -110px;
+    width: 86%;
   });
-  .sm-h(@lg, @l, { // На компьютере
+  .sm-h(@md, @l, { // На компьютере
     display: block;
     width: 70%;
-    margin-top: 40px;
-    margin-bottom: -270px;
+    margin-top: 20px;
+    margin-bottom: -150px;
+  });
+  .lg-block( @l, {
+    display: block;
+    width: 60%;
   });
 
   background: @back-header-extra;
