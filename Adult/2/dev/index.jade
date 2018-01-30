@@ -1,23 +1,17 @@
-doctype
-html
+html( xmlns="http://www.w3.org/1999/xhtml", xmlns:th="http://www.thymeleaf.org")
     head
         include m-head
-        +head()
+        +head( 'Adult 18+' )
     body.lbody
         include top-form
         .wrapper
             include m-header
-            +header( 'СМОТРЕТЬ', '+' )
+            +header( 'СМОТРЕТЬ' )
             .wrapper__form
-                // First Screen
-                include check-button
-                // Second screen
-                #secondScreen.button__container
-                    include text-check
-                    include m-button
-                    +button( 'СМОТРЕТЬ', '-' )
+                include m-allInButton
+                +button( 'СМОТРЕТЬ', '+' )
                 button.button__cancel( onclick="document.getElementById('frm-cancel').submit(); return false;" ) Отмена
             include footer
-        //script( type="javascript", src="js/script.js" )
         script document.getElementById('mainCheckbox').addEventListener('click', function () { document.getElementById('firstScreen').classList.add('fadeOut'); document.getElementById('secondScreen').classList.add('fadeIn'); console.info( '+' ) });
+
 
