@@ -1718,6 +1718,10 @@ a {
     height: 227px;
   }
 
+  .button__container {
+    height: 50px;
+  }
+
   .button__cancel {
     margin: 3px auto 0;
     height: 12px;
@@ -1771,6 +1775,10 @@ a {
 }
 
 @media screen and (min-height: 410px) and (orientation: landscape) {
+  .button__container {
+    height: auto;
+  }
+
   .button__cancel {
     margin: 23px auto 0;
     height: 25px;
