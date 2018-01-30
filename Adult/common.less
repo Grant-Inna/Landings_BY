@@ -837,9 +837,9 @@ a {
   height: 30px;
   outline: none;
 
-  .landscape-block({ margin: 3px auto 0; height: 10px });
-  .landscape-block-h(@xxs, { margin: 14px auto 0; height: 20px });
-  .landscape-block-h(@xs, { margin: 23px auto 0; height: 25px });
+  .landscape-block({ margin: 3px auto 0; height: 23px });
+  .landscape-block-h(@xxs, { margin: 14px auto 0; height: 25px });
+  .landscape-block-h(@xs, { margin: 23px auto 0; height: 28px });
   .landscape-block-h(@sm, { margin: 30px auto 0; height: 30px })
 }
 
@@ -866,14 +866,14 @@ a {
 }
 
 .footer {
-  font-size: 9px;
+  font-size: 1rem;
   padding: 3px 4px 5px;
   text-align: center;
   width: 100%;
   height: 35px;
   .flex-center;
 
-  .md( font-size, 10px )
+  .landscape( height, 20px );
 }
 
 .header__info {

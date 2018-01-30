@@ -1104,7 +1104,7 @@ a {
 }
 
 .footer {
-  font-size: 9px;
+  font-size: 1rem;
   padding: 3px 4px 5px;
   text-align: center;
   width: 100%;
@@ -1653,10 +1653,6 @@ a {
 }
 
 @media screen and (min-width: 730px) {
-  .footer {
-    font-size: 10px;
-  }
-
   .header__info {
     font-size: 10px;
   }
@@ -1673,7 +1669,7 @@ a {
 
   .button__cancel {
     margin: 3px auto 0;
-    height: 10px;
+    height: 23px;
   }
 
   .wrapper__form {
@@ -1682,6 +1678,10 @@ a {
 
   .wrapper__form {
     padding-bottom: 0;
+  }
+
+  .footer {
+    height: 20px;
   }
 
   .header__info {
@@ -1709,7 +1709,7 @@ a {
 
   .button__cancel {
     margin: 14px auto 0;
-    height: 20px;
+    height: 25px;
   }
 
   .wrapper__form {
@@ -1743,7 +1743,7 @@ a {
 
   .button__cancel {
     margin: 23px auto 0;
-    height: 25px;
+    height: 28px;
   }
 
   .header__info {
