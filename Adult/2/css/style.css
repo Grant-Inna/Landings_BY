@@ -1022,7 +1022,7 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  height: 55%;
+  height: 70%;
   min-height: 60px;
   max-height: 100px;
   width: 280px;
@@ -1633,7 +1633,7 @@ a {
 @media screen and (min-width: 359px) {
   .button__container {
     width: 90%;
-    height: 45%;
+    height: 65%;
   }
 
   .checked__textContainer {
