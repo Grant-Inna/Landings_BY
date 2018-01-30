@@ -1011,31 +1011,6 @@ a {
   /* landscape */
 }
 
-.button__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
-  height: 70%;
-  min-height: 60px;
-  max-height: 100px;
-  width: 280px;
-  min-width: 240px;
-  max-width: 380px;
-  font-size: 3rem;
-  font-weight: 600;
-  -webkit-transition: 0.05s ease-in-out;
-  -o-transition: 0.05s ease-in-out;
-  transition: 0.05s ease-in-out;
-  outline: none;
-}
-
 .checked__textContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1055,6 +1030,31 @@ a {
   -webkit-transition: 0.05s ease-in-out;
   -o-transition: 0.05s ease-in-out;
   transition: 0.05s ease-in-out;
+}
+
+.button__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  height: 70%;
+  min-height: 80px;
+  max-height: 100px;
+  width: 280px;
+  min-width: 240px;
+  max-width: 380px;
+  font-size: 3rem;
+  font-weight: 600;
+  -webkit-transition: 0.05s ease-in-out;
+  -o-transition: 0.05s ease-in-out;
+  transition: 0.05s ease-in-out;
+  outline: none;
 }
 
 .button__buy,
@@ -1647,17 +1647,17 @@ a {
 }
 
 @media screen and (min-width: 359px) {
-  .button__container {
-    width: 90%;
-    height: 65%;
-  }
-
   .checked__textContainer {
     width: 90%;
   }
 
   .checked__textContainer {
     padding: 6px;
+  }
+
+  .button__container {
+    width: 90%;
+    height: 65%;
   }
 
   .relation {
@@ -1766,12 +1766,13 @@ a {
     height: 227px;
   }
 
-  .button__container {
-    height: 25px;
-  }
-
   .checked__textContainer {
     margin-bottom: 3px;
+  }
+
+  .button__container {
+    height: 25px;
+    min-height: 25px;
   }
 
   .button__cancel {
@@ -1797,12 +1798,13 @@ a {
     height: 100%;
   }
 
-  .button__container {
-    height: 40%;
-  }
-
   .checked__textContainer {
     margin-bottom: 7px;
+  }
+
+  .button__container {
+    height: 40%;
+    min-height: 40px;
   }
 
   .button__cancel {
@@ -1846,6 +1848,10 @@ a {
 }
 
 @media screen and (min-height: 660px) and (orientation: landscape) {
+  .button__container {
+    min-height: 60px;
+  }
+
   .button__cancel {
     margin: 30px auto 0;
     height: 30px;
