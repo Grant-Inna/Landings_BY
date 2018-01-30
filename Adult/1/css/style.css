@@ -1668,12 +1668,12 @@ a {
   }
 
   .button__container {
-    height: 30px;
+    height: 25px;
   }
 
   .button__cancel {
     margin: 3px auto 0;
-    height: 12px;
+    height: 10px;
   }
 
   .wrapper__form {
@@ -1682,6 +1682,10 @@ a {
 
   .wrapper__form {
     padding-bottom: 0;
+  }
+
+  .header__info {
+    height: 25px;
   }
 
   .wrapper {
@@ -1705,7 +1709,7 @@ a {
 
   .button__cancel {
     margin: 14px auto 0;
-    height: 22px;
+    height: 20px;
   }
 
   .wrapper__form {
@@ -1714,6 +1718,10 @@ a {
 
   .wrapper__form {
     padding-bottom: 30px;
+  }
+
+  .header__info {
+    height: 30px;
   }
 }
 
@@ -1737,12 +1745,16 @@ a {
     margin: 23px auto 0;
     height: 25px;
   }
+
+  .header__info {
+    height: 35px;
+  }
 }
 
 @media screen and (min-height: 660px) and (orientation: landscape) {
   .button__cancel {
     margin: 30px auto 0;
-    height: 28px;
+    height: 30px;
   }
 }
 

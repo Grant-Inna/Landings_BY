@@ -793,7 +793,7 @@ a {
     height: 45%;
   });
 
-  .landscape( height, 30px );
+  .landscape( height, 25px );
   .landscape-h( @xs, height, auto );
 
   font-size: 3rem;
@@ -837,10 +837,10 @@ a {
   height: 30px;
   outline: none;
 
-  .landscape-block({ margin: 3px auto 0; height: 12px });
-  .landscape-block-h(@xxs, { margin: 14px auto 0; height: 22px });
+  .landscape-block({ margin: 3px auto 0; height: 10px });
+  .landscape-block-h(@xxs, { margin: 14px auto 0; height: 20px });
   .landscape-block-h(@xs, { margin: 23px auto 0; height: 25px });
-  .landscape-block-h(@sm, { margin: 30px auto 0; height: 28px })
+  .landscape-block-h(@sm, { margin: 30px auto 0; height: 30px })
 }
 
 .wrapper__form {
@@ -886,6 +886,10 @@ a {
   .md( font-size, 10px );
 
   height: 35px;
+  .landscape( height, 25px );
+  .landscape-h(@xxs, height, 30px );
+  .landscape-h(@xs, height, 35px );
+
   .landscape-block-h(@lg, {
     height: 40px;
     padding: 5px 10px;
