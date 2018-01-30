@@ -16,14 +16,12 @@ const gulp = require('gulp'),
 
 gulp.task('CSS1', function() {
     return gulp.src( '1/dev/less/style.less' )
-        .pipe(sourcemaps.init())
         .pipe(less())
         .pipe(groupMedia())
         .pipe(autoprefixer({browsers: ['last 5 versions', '> 2%']}))
         .pipe(gulp.dest( '1/css/' ))
         .pipe(cleanCSS())
         .pipe(rename({ suffix: '.min' }))
-        .pipe(sourcemaps.write('dev/'))
         .pipe(gulp.dest( '1/css/' ))
         .pipe(notify('CSS1 Success!'));
 });
@@ -31,14 +29,12 @@ gulp.task('CSS1', function() {
 
 gulp.task('CSS2', function() {
     return gulp.src( '2/dev/less/style.less' )
-        .pipe(sourcemaps.init())
         .pipe(less())
         .pipe(groupMedia())
         .pipe(autoprefixer({browsers: ['last 5 versions', '> 2%']}))
         .pipe(gulp.dest( '2/css/' ))
         .pipe(cleanCSS())
         .pipe(rename({ suffix: '.min' }))
-        .pipe(sourcemaps.write('dev/'))
         .pipe(gulp.dest( '2/css/' ))
         .pipe(notify('CSS2 Success!'));
 });
@@ -46,14 +42,12 @@ gulp.task('CSS2', function() {
 
 gulp.task('CSS3', function() {
     return gulp.src( '3/dev/less/style.less' )
-        .pipe(sourcemaps.init())
         .pipe(less())
         .pipe(groupMedia())
         .pipe(autoprefixer({browsers: ['last 5 versions', '> 2%']}))
         .pipe(gulp.dest( '3/css/' ))
         .pipe(cleanCSS())
         .pipe(rename({ suffix: '.min' }))
-        .pipe(sourcemaps.write('dev/'))
         .pipe(gulp.dest( '3/css/' ))
         .pipe(notify('CSS3 Success!'));
 });
@@ -61,14 +55,12 @@ gulp.task('CSS3', function() {
 
 gulp.task('CSS4', function() {
     return gulp.src( '4/dev/less/style.less' )
-        .pipe(sourcemaps.init())
         .pipe(less())
         .pipe(groupMedia())
         .pipe(autoprefixer({browsers: ['last 5 versions', '> 2%']}))
         .pipe(gulp.dest( '4/css/' ))
         .pipe(cleanCSS())
         .pipe(rename({ suffix: '.min' }))
-        .pipe(sourcemaps.write('dev/'))
         .pipe(gulp.dest( '4/css/' ))
         .pipe(notify('CSS4 Success!'));
 });
@@ -76,14 +68,12 @@ gulp.task('CSS4', function() {
 
 gulp.task('CSS5', function() {
     return gulp.src( '5/dev/less/style.less' )
-        .pipe(sourcemaps.init())
         .pipe(less())
         .pipe(groupMedia())
         .pipe(autoprefixer({browsers: ['last 5 versions', '> 2%']}))
         .pipe(gulp.dest( '5/css/' ))
         .pipe(cleanCSS())
         .pipe(rename({ suffix: '.min' }))
-        .pipe(sourcemaps.write('dev/'))
         .pipe(gulp.dest( '5/css/' ))
         .pipe(notify('CSS5 Success!'));
 });
@@ -92,14 +82,12 @@ gulp.task('CSS5', function() {
 
 gulp.task('CSS6', function() {
     return gulp.src( '6/dev/less/style.less' )
-        .pipe(sourcemaps.init())
         .pipe(less())
         .pipe(groupMedia())
         .pipe(autoprefixer({browsers: ['last 5 versions', '> 2%']}))
         .pipe(gulp.dest( '6/css/' ))
         .pipe(cleanCSS())
         .pipe(rename({ suffix: '.min' }))
-        .pipe(sourcemaps.write('dev/'))
         .pipe(gulp.dest( '6/css/' ))
         .pipe(notify('CSS6 Success!'));
 });

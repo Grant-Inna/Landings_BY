@@ -1011,7 +1011,7 @@ a {
   /* landscape */
 }
 
-.button__buy {
+.button__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1021,13 +1021,13 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
   height: 80px;
   min-height: 60px;
   max-height: 100px;
   width: 280px;
   min-width: 240px;
   max-width: 380px;
-  margin: 28% auto 5px;
   font-size: 3rem;
   font-weight: 600;
   -webkit-transition: 0.05s ease-in-out;
@@ -1036,18 +1036,31 @@ a {
   outline: none;
 }
 
-/*.button__price {
-  margin: 0 auto;
-  font-size: 2.2rem;
-  .flex-center;
-  width: 80%;
-  max-width: 300px;
+.checked__textContainer {
+  width: 280px;
+  min-width: 240px;
+  max-width: 380px;
+  font-size: 1.7rem;
+  -webkit-transition: 0.05s ease-in-out;
+  -o-transition: 0.05s ease-in-out;
+  transition: 0.05s ease-in-out;
+}
 
-  height: 30px;
+.button__buy,
+.button__check {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: inherit;
+  border: none;
+  outline: none;
+}
 
-  .landscape( height, 25px );
-  .landscape-h(@xxs, height, 30px )
-}*/
+#submitButton:disabled {
+  background: #6e6e6e;
+}
 
 .button__cancel {
   margin: 40px auto -50px;
@@ -1117,14 +1130,6 @@ a {
   height: 35px;
   /* portrait */
   /* landscape */
-}
-
-.relation__mainContent {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .wrapper {
@@ -1281,12 +1286,10 @@ a {
 
 /* second screen */
 
-.button__container {
-  -webkit-transform: scale(0);
-      -ms-transform: scale(0);
-          transform: scale(0);
-  opacity: 0;
-}
+/*.button__container {
+    transform: scale(0);
+    opacity: 0;
+}*/
 
 /* button */
 
@@ -1338,14 +1341,6 @@ a {
 
 /* index */
 
-.wrapper__main {
-  position: relative;
-  z-index: 1;
-  min-height: 100px;
-  height: auto;
-  width: 95%;
-}
-
 /* first screen */
 
 .button__check {
@@ -1358,12 +1353,6 @@ a {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  height: 80px;
-  min-height: 60px;
-  max-height: 100px;
-  width: 280px;
-  min-width: 240px;
-  max-width: 380px;
   -webkit-transition: 0.05s ease-in-out;
   -o-transition: 0.05s ease-in-out;
   transition: 0.05s ease-in-out;
@@ -1396,10 +1385,13 @@ a {
 }
 
 .check__container .check__link {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   text-decoration: none;
-  padding-bottom: 2px;
-  border-bottom: 1px solid inherit;
+  border-bottom: 1px solid #fff;
+}
+
+.check__container .check__link div {
+  margin-bottom: 1px;
 }
 
 .check__label {
@@ -1440,24 +1432,59 @@ a {
   display: flex;
 }
 
+#secondCheckbox:checked + .checked__checked {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 /* second screen */
 
 .checked__textContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  opacity: 0;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
 }
 
-.checked__label {
-  width: 1rem;
-  height: 1rem;
+.checked__checked {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.checked__checked:after {
+  content: '\2713';
+  color: black;
+  font-size: 4rem;
+  margin: 0 auto;
+}
+
+.checked__checked:after {
+  font-size: 1.6rem;
+}
+
+.checked__text a {
+  text-decoration: none;
 }
 
 /* animation */
 
 .fadeOut {
-  -webkit-animation: out .6s;
-          animation: out .6s;
+  -webkit-animation: out .5s;
+          animation: out .5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -1469,16 +1496,10 @@ a {
     opacity: 1;
   }
 
-  90% {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-    opacity: .5;
-  }
-
   100% {
-    -webkit-transform: scale(0.4);
-            transform: scale(0.4);
-    opacity: .3;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
   }
 }
 
@@ -1489,25 +1510,58 @@ a {
     opacity: 1;
   }
 
-  90% {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-    opacity: .5;
-  }
-
   100% {
-    -webkit-transform: scale(0.4);
-            transform: scale(0.4);
-    opacity: .3;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
   }
 }
 
 .fadeIn {
-  -webkit-animation: out .65s;
-          animation: out .65s;
-  animation-direction: reverse;
+  -webkit-animation: in .6s;
+          animation: in .6s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes in {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    opacity: .9;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes in {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    opacity: .9;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
 }
 
 @media screen and (min-width: 359px) and (orientation: portrait) {
@@ -1526,7 +1580,7 @@ a {
   }
 
   .header__info {
-    padding: 0 10px;
+    padding: 3px 10px;
     height: 35px;
   }
 
@@ -1536,18 +1590,13 @@ a {
 }
 
 @media screen and (min-width: 359px) {
-  .button__buy {
+  .button__container {
     width: 90%;
     height: 45%;
   }
 
-  .wrapper__main {
-    width: 85%;
-  }
-
-  .button__check {
+  .checked__textContainer {
     width: 90%;
-    height: 45%;
   }
 }
 
@@ -1618,13 +1667,9 @@ a {
     height: 227px;
   }
 
-  .button__buy .button__text {
-    margin-left: auto;
-  }
-
   .button__cancel {
-    margin: 8px auto 0;
-    height: 20px;
+    margin: 3px auto 0;
+    height: 15px;
   }
 
   .wrapper__form {
@@ -1647,10 +1692,6 @@ a {
   .relation__mainContent {
     background: transparent;
   }
-
-  .wrapper__main {
-    height: 70%;
-  }
 }
 
 @media screen and (min-height: 359px) and (orientation: landscape) {
@@ -1659,8 +1700,8 @@ a {
   }
 
   .button__cancel {
-    margin: 20px auto 0;
-    height: 24px;
+    margin: 14px auto 0;
+    height: 22px;
   }
 
   .wrapper__form {
@@ -1679,16 +1720,20 @@ a {
 
   .header__info {
     height: 40px;
-  }
-
-  .wrapper__main {
-    height: auto;
+    padding: 5px 10px;
   }
 }
 
 @media screen and (min-height: 410px) and (orientation: landscape) {
   .button__cancel {
-    margin: 35px auto 0;
+    margin: 23px auto 0;
+    height: 25px;
+  }
+}
+
+@media screen and (min-height: 660px) and (orientation: landscape) {
+  .button__cancel {
+    margin: 30px auto 0;
     height: 28px;
   }
 }

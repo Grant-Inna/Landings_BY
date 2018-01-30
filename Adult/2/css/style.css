@@ -1719,8 +1719,8 @@ a {
   }
 
   .button__cancel {
-    margin: 8px auto 0;
-    height: 20px;
+    margin: 3px auto 0;
+    height: 15px;
   }
 
   .wrapper__form {
@@ -1742,8 +1742,8 @@ a {
   }
 
   .button__cancel {
-    margin: 20px auto 0;
-    height: 24px;
+    margin: 14px auto 0;
+    height: 22px;
   }
 
   .wrapper__form {
@@ -1772,11 +1772,18 @@ a {
 
 @media screen and (min-height: 410px) and (orientation: landscape) {
   .button__cancel {
-    margin: 35px auto 0;
-    height: 28px;
+    margin: 23px auto 0;
+    height: 25px;
   }
 
   .checked__textContainer {
     margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-height: 660px) and (orientation: landscape) {
+  .button__cancel {
+    margin: 30px auto 0;
+    height: 28px;
   }
 }
