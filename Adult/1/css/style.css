@@ -1037,10 +1037,21 @@ a {
 }
 
 .checked__textContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 280px;
   min-width: 240px;
   max-width: 380px;
   font-size: 1.7rem;
+  padding: 3px;
+  margin-bottom: 10px;
   -webkit-transition: 0.05s ease-in-out;
   -o-transition: 0.05s ease-in-out;
   transition: 0.05s ease-in-out;
@@ -1349,9 +1360,9 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-transition: 0.05s ease-in-out;
   -o-transition: 0.05s ease-in-out;
   transition: 0.05s ease-in-out;
@@ -1397,6 +1408,8 @@ a {
   position: relative;
   width: 5rem;
   height: 5rem;
+  margin-right: 10px;
+  margin-left: auto;
 }
 
 .check__input {
@@ -1423,6 +1436,10 @@ a {
   color: black;
   font-size: 4rem;
   margin: 0 auto;
+}
+
+.check__container {
+  margin-right: auto;
 }
 
 #mainCheckbox:checked + .check__checked {
@@ -1567,6 +1584,14 @@ a {
   html {
     font-size: 10px;
   }
+
+  .check__label {
+    margin-left: 0;
+  }
+
+  .check__container {
+    margin-right: 0;
+  }
 }
 
 @media screen and (min-width: 359px) and (min-height: 660px) and (orientation: portrait) {
@@ -1597,6 +1622,10 @@ a {
   .checked__textContainer {
     width: 90%;
   }
+
+  .checked__textContainer {
+    padding: 6px;
+  }
 }
 
 @media screen and (min-width: 359px) and (min-height: 800px) and (orientation: landscape) {
@@ -1608,10 +1637,6 @@ a {
 @media screen and (min-width: 410px) and (min-height: 730px) and (orientation: portrait) {
   .header {
     height: 60px;
-  }
-
-  .wrapper__form {
-    padding-bottom: 80px;
   }
 
   .header__info {
@@ -1628,6 +1653,14 @@ a {
 @media screen and (min-width: 660px) and (orientation: landscape) {
   html {
     font-size: 10px;
+  }
+
+  .check__label {
+    margin-left: 0;
+  }
+
+  .check__container {
+    margin-right: 0;
   }
 }
 
@@ -1666,6 +1699,10 @@ a {
     height: 25px;
   }
 
+  .checked__textContainer {
+    margin-bottom: 3px;
+  }
+
   .button__cancel {
     margin: 5px auto 0;
     height: 23px;
@@ -1673,10 +1710,6 @@ a {
 
   .wrapper__form {
     margin-top: 1px;
-  }
-
-  .wrapper__form {
-    padding-bottom: 0;
   }
 
   .footer {
@@ -1706,6 +1739,14 @@ a {
     height: 100%;
   }
 
+  .button__container {
+    height: 40%;
+  }
+
+  .checked__textContainer {
+    margin-bottom: 7px;
+  }
+
   .button__cancel {
     margin: 14px auto 0;
     height: 25px;
@@ -1713,10 +1754,6 @@ a {
 
   .wrapper__form {
     margin-top: 0;
-  }
-
-  .wrapper__form {
-    padding-bottom: 30px;
   }
 
   .header__info {
@@ -1736,8 +1773,8 @@ a {
 }
 
 @media screen and (min-height: 410px) and (orientation: landscape) {
-  .button__container {
-    height: 40%;
+  .checked__textContainer {
+    margin-bottom: 10px;
   }
 
   .button__cancel {

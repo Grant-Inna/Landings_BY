@@ -4,7 +4,7 @@
 .button__check {
   .flex;
   .items-center;
-  .justify-evenly;
+  .justify-center;
   transition: .05s ease-in-out;
   transform: scale(1);
   opacity: 1;
@@ -38,6 +38,11 @@
   position: relative;
   width: 5rem;
   height: 5rem;
+
+  margin-right: 10px;
+  margin-left: auto;
+  .xxs-o( @p, margin-left, 0 );
+  .sm-o( @l, margin-left, 0 );
 }
 .check__input {
   opacity: 0;
@@ -58,7 +63,11 @@
     margin: 0 auto;
   }
 }
-.check__container {}
+.check__container {
+  margin-right: auto;
+  .xxs-o( @p, margin-right, 0 );
+  .sm-o( @l, margin-right, 0 );
+}
 .check__big {}
 .check__link {}
 

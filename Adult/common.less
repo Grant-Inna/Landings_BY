@@ -794,7 +794,7 @@ a {
   });
 
   .landscape( height, 25px );
-  .landscape-h( @xs, height, 40% );
+  .landscape-h( @xxs, height, 40% );
 
   font-size: 3rem;
   font-weight: 600;
@@ -803,11 +803,23 @@ a {
   outline: none;
 }
 .checked__textContainer {
+  .flex;
+  .items-center;
+  .justify-center;
+
   width: 280px;
   min-width: 240px;
   max-width: 380px;
   .xxs-b({ width: 90%; });
   font-size: 1.7rem;
+
+  padding: 3px;
+  .xxs( padding, 6px );
+
+  margin-bottom: 10px;
+  .landscape( margin-bottom, 3px);
+  .landscape-h( @xxs, margin-bottom, 7px );
+  .landscape-h( @xs, margin-bottom, 10px );
 
   transition: .05s ease-in-out;
 }
@@ -854,12 +866,6 @@ a {
 
   .landscape( margin-top, 1px );
   .landscape-h(@xxs, margin-top, 0 );
-
-  .xs-h( @md, @p, {
-    padding-bottom: 80px;
-  });
-  .landscape( padding-bottom, 0 );
-  .landscape-h(@xxs, padding-bottom, 30px );
 
 }
 

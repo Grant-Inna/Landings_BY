@@ -18,14 +18,19 @@
   min-height: @height-header-extra;
   border-radius: @border-r-header-extra;
 
-  margin: @margin-top-header-extra auto @margin-bottom-header-extra * 5;
+  margin: @margin-top-header-extra auto @margin-bottom-header-extra * 10;
 
   background: @back-header-extra;
   background-size: @back-size-header-extra;
 
+  .xxs-h(@sm, @p, { // iPhone 6
+    margin-top: 20px;
+    margin-bottom: -180px;
+    width: 90%;
+  });
   .xxs-h(@lg, @p, { // iPhone X
     margin-top: 20px;
-    margin-bottom: -110px;
+    margin-bottom: -200px;
     width: 86%;
   });
   .sm-h(@md, @l, { // На компьютере
