@@ -1,22 +1,28 @@
-# Landings for Beeline
+# Landings for BY MTC
 Testing repo for plenty of landings
 
 
-[**Video**](https://grant-inna.github.io/Landings_Beeline/Video) *ready*
+[**Adult**](https://grant-inna.github.io/Landings_BY/Adult) *in process*
 
-[**Media-Online**](https://grant-inna.github.io/Landings_Beeline/Media-Online) *ready*
+[**Video**](https://grant-inna.github.io/Landings_BY/Video) *coming soon*
 
-[**Adult**](https://grant-inna.github.io/Landings_Beeline/Adult) *ready*
+[**Sport**](https://grant-inna.github.io/Landings_BY/Sporte) *coming soon*
 
-[**News**](https://grant-inna.github.io/Landings_Beeline/News) *ready*
+[**News**](https://grant-inna.github.io/Landings_BY/News) *coming soon*
 
-[**Host**](https://grant-inna.github.io/Landings_Beeline/Host) *ready*
+[**Horoscope**](https://grant-inna.github.io/Landings_BY/Horoscope) *coming soon*
 
-[**Games**](https://grant-inna.github.io/Landings_Beeline/Games) *ready*
+[**Host**](https://grant-inna.github.io/Landings_BY/Host) *coming soon*
 
-[**Music**](https://grant-inna.github.io/Landings_Beeline/Music) *ready*
+[**Games**](https://grant-inna.github.io/Landings_BY/Games) *coming soon*
 
-[**Dating**](https://grant-inna.github.io/Landings_Beeline/Dating) *in process*
+[**Music**](https://grant-inna.github.io/Landings_BY/Music) *coming soon*
+
+[**Dating**](https://grant-inna.github.io/Landings_BY/Dating) *coming soon*
+
+[**General**](https://grant-inna.github.io/Landings_BY/General) *coming soon*
+
+[**Weather**](https://grant-inna.github.io/Landings_BY/Weather) *coming soon*
 
 
 ---
