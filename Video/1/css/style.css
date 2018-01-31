@@ -1638,11 +1638,6 @@ a {
 }
 
 @media screen and (min-width: 359px) and (min-height: 800px) and (orientation: portrait) {
-  .header__extra {
-    width: 94%;
-    margin-top: 50px;
-  }
-
   .checked {
     height: 100%;
   }
@@ -1690,7 +1685,7 @@ a {
 
   .header__extra {
     width: 90%;
-    margin-top: 25px;
+    margin-top: 50px;
   }
 }
 
