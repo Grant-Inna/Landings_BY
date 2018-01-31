@@ -1174,8 +1174,10 @@ a {
 /* header */
 
 .header {
-  background: #6187ae center no-repeat;
+  background: #ffffff center no-repeat;
   background-size: 100% 100%;
+  -webkit-box-shadow: 2px 4px 35px 0px #1b1b1b;
+          box-shadow: 2px 4px 35px 0px #1b1b1b;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1191,7 +1193,7 @@ a {
   background: url('../images/logo.png') bottom left no-repeat;
   background-size: contain;
   width: 60%;
-  height: 70%;
+  height: 55%;
   margin-left: 4%;
 }
 
@@ -1301,12 +1303,12 @@ a {
 /* button */
 
 .button__container {
-  background: #6188b0 center no-repeat;
+  background: #ff001e center no-repeat;
   background-size: 100% 100%;
   border-bottom: 0 solid transparent;
   border-radius: 4px;
-  -webkit-box-shadow: 8px 14px 49px 0px rgba(97, 135, 174, 0.43);
-          box-shadow: 8px 14px 49px 0px rgba(97, 135, 174, 0.43);
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 /* first screen */
@@ -1321,8 +1323,8 @@ a {
   padding-bottom: 0;
   border-radius: 4px;
   color: #fff;
-  -webkit-box-shadow: 8px 14px 49px 0px rgba(97, 135, 174, 0.43);
-          box-shadow: 8px 14px 49px 0px rgba(97, 135, 174, 0.43);
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .check__label {
@@ -1344,35 +1346,25 @@ a {
           justify-content: center;
   font-size: 3.1rem;
   color: #ffffff;
-  border: 4px;
+  border-radius: 4px;
   opacity: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding-bottom: 0;
 }
 
-/*@back-button-icon-image: url('../images/button-icon.png');
-@back-button-icon: @back-button-icon-image center no-repeat;
-
 .button__icon {
-  background: @back-button-icon;
+  background: url('../images/button-icon.png') center no-repeat;
   background-size: contain;
-
   width: 3rem;
   height: 3rem;
   margin-left: 10px;
-
-  .xs-b({
-    width: 4rem;
-    height: 4rem;
-    margin-left: 15px;
-  })
-}*/
+}
 
 /* cancel + footer */
 
 .button__cancel {
-  background: #f0f4f8;
+  background: #ececec;
   color: #000000;
   border: none;
   border-radius: 2px;
@@ -1381,8 +1373,10 @@ a {
 /* footer */
 
 .footer {
-  background: #6187ae;
-  color: #f4f7fa;
+  background: #ffffff;
+  color: #525252;
+  -webkit-box-shadow: 2px 4px 35px 0px rgba(27, 27, 27, 0.14);
+          box-shadow: 2px 4px 35px 0px rgba(27, 27, 27, 0.14);
 }
 
 /* index */
@@ -1726,6 +1720,12 @@ a {
 @media screen and (min-width: 410px) {
   .button__buy {
     font-size: 3.7rem;
+  }
+
+  .button__icon {
+    width: 4rem;
+    height: 4rem;
+    margin-left: 15px;
   }
 }
 
