@@ -1638,25 +1638,28 @@ a {
   }
 }
 
-@media screen and (min-width: 359px) and (orientation: portrait) {
-  html {
-    font-size: 10px;
+@media screen and (min-width: 310px) and (min-height: 560px) and (orientation: portrait) {
+  .button__cancel {
+    margin-top: 85px;
+  }
+}
+
+@media screen and (min-width: 359px) {
+  .checked__textContainer {
+    width: 90%;
   }
 
-  .button__text {
-    margin-left: 0;
+  .checked__textContainer {
+    padding: 6px;
   }
 
-  .button__icon {
-    margin-right: 0;
+  .button__container {
+    width: 90%;
+    height: 65%;
   }
 
-  .check__label {
-    margin-left: 0;
-  }
-
-  .check__container {
-    margin-right: 0;
+  .checked__text {
+    font-size: 1.6rem;
   }
 }
 
@@ -1695,22 +1698,25 @@ a {
   }
 }
 
-@media screen and (min-width: 359px) {
-  .checked__textContainer {
-    width: 90%;
+@media screen and (min-width: 359px) and (orientation: portrait) {
+  html {
+    font-size: 10px;
   }
 
-  .checked__textContainer {
-    padding: 6px;
+  .button__text {
+    margin-left: 0;
   }
 
-  .button__container {
-    width: 90%;
-    height: 65%;
+  .button__icon {
+    margin-right: 0;
   }
 
-  .checked__text {
-    font-size: 1.6rem;
+  .check__label {
+    margin-left: 0;
+  }
+
+  .check__container {
+    margin-right: 0;
   }
 }
 
