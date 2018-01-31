@@ -1382,6 +1382,10 @@ a {
   })
 }*/
 
+.button__cancel {
+  margin-top: 80px;
+}
+
 /* cancel + footer */
 
 .button__cancel {
