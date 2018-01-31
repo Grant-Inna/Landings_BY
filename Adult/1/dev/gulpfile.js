@@ -7,7 +7,6 @@ var gulp = require('gulp'),
     imagemin = require('gulp-imagemin'),
     rename = require("gulp-rename"),
     browserSync = require("browser-sync").create(),
-    sourcemaps = require("gulp-sourcemaps"),
     notify = require("gulp-notify");
 
 
@@ -29,14 +28,12 @@ gulp.task('imageMIN', function() {
 
 gulp.task('CSS', function() {
     return gulp.src( 'less/style.less' )
-        .pipe(sourcemaps.init())
         .pipe(less())
         .pipe(groupMedia())
         .pipe(autoprefixer({browsers: ['last 5 versions', '> 2%']}))
         .pipe(gulp.dest( '../css/' ))
         .pipe(cleanCSS())
         .pipe(rename({ suffix: '.min' }))
-        .pipe(sourcemaps.write('dev/'))
         .pipe(gulp.dest( '../css/' ))
         .pipe(notify('CSS Success!'));
 });

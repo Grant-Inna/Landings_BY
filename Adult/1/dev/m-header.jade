@@ -1,31 +1,16 @@
-mixin header ( text, extra, elements )
-    case extra
-        when '+'
-            .header__container
-                .header
-                    case elements
-                        when 'no-elem'
-                            .header__logo
-                        default
-                            .header__logo
-                            .header__elements
-                .header__info Нажатием кнопки "#{ text }" абонент осуществляет подписку на интернет-ресурс &nbsp;
-                    a( href="http://videomeo.by/" ) videomeo.by
-                    br
-                    | Стоимость подписки: 0.20 р. с НДС в день.
-                .header__extra
-                    .relation
-                    .relation__content
-        default
-            .header__container
-                .header
-                    case elements
-                        when 'no-elem'
-                            .header__logo
-                        default
-                            .header__logo
-                            .header__elements
-                .header__info Нажатием кнопки "#{ text }" абонент осуществляет подписку на интернет-ресурс &nbsp;
-                    a( href="http://videomeo.by/" ) videomeo.by
-                    br
-                    | Стоимость подписки: 0.20 р. с НДС в день.
+mixin header ( text, elements )
+    .header__container
+        .header
+            case elements
+                when '-'
+                    .header__logo
+                default
+                    .header__logo
+                    .header__elements
+        .header__info Нажатием кнопки "#{ text }" абонент осуществляет подписку на интернет-ресурс &nbsp;
+            a( href="http://videomeo.by/" ) videomeo.by.
+            br
+            | &nbsp;&nbsp;Стоимость подписки: 0.20 р. с НДС в день.
+        .header__extra
+            .relation
+            #infoScreen.relation__content
