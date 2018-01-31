@@ -1158,7 +1158,7 @@ a {
 /* header */
 
 .header {
-  background: #f5f5f5 center no-repeat;
+  background: #121212 center no-repeat;
   background-size: 100% 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1188,11 +1188,21 @@ a {
 }
 
 .header__info {
-  background: #ffffff center no-repeat;
+  background: #151515 center no-repeat;
   background-size: 100% 100%;
+  color: #b3b3b3;
   -webkit-box-shadow: none;
           box-shadow: none;
   border-bottom: none;
+}
+
+/* dop top */
+
+.header__dopTop {
+  width: 100%;
+  background: #151515 url('../images/dop-top.png') bottom no-repeat;
+  background-size: contain;
+  height: 0;
 }
 
 /* top extra block */
@@ -1204,7 +1214,7 @@ a {
   min-height: 50px;
   border-radius: 3px;
   margin: 10px auto -100px;
-  background: url('../images/header-extra.png') center no-repeat;
+  background: #151515 center no-repeat;
   background-size: 100% 100%;
 }
 
@@ -1259,10 +1269,10 @@ a {
 }
 
 .checked__textContainer {
-  background: #ff034a;
+  background: #ff8500;
   color: #ffffff;
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 
 .checked__label {
@@ -1286,10 +1296,10 @@ a {
 /* button */
 
 .button__container {
-  background: #ff034a center no-repeat;
+  background: #ff8500 center no-repeat;
   background-size: 100% 100%;
-  border: 0 transparent;
-  border-radius: 50px;
+  border-bottom: 0 solid transparent;
+  border-radius: 4px;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -1301,10 +1311,10 @@ a {
   background-size: 100% 100%;
   z-index: 10;
   border: none;
-  /*box-sizing: border-box;
-  border-bottom: @border-button-check;
-  padding-bottom: @border-size-button-container;*/
-  border-radius: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-bottom: 0;
+  border-radius: 4px;
   color: #fff;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -1329,24 +1339,37 @@ a {
           justify-content: center;
   font-size: 3.1rem;
   color: #ffffff;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
   opacity: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-bottom: 0;
 }
 
+/*@back-button-icon-image: url('../images/button-icon.png');
+@back-button-icon: @back-button-icon-image center no-repeat;
+
 .button__icon {
-  background: url('../images/button-icon.png') center no-repeat;
+  background: @back-button-icon;
   background-size: contain;
+
   width: 3rem;
   height: 3rem;
   margin-left: 10px;
-}
+
+  .xs-b({
+    width: 4rem;
+    height: 4rem;
+    margin-left: 15px;
+  })
+}*/
 
 /* cancel + footer */
 
 .button__cancel {
-  background: #020d20;
-  color: #afafaf;
+  background: #ffffff;
+  color: #111111;
   border: none;
   border-radius: 2px;
 }
@@ -1354,7 +1377,7 @@ a {
 /* footer */
 
 .footer {
-  background: #091525;
+  background: #121212;
   color: #a3b0bb;
 }
 
@@ -1611,6 +1634,10 @@ a {
     margin-right: 0;
   }
 
+  .header__dopTop {
+    height: 40px;
+  }
+
   .check__label {
     margin-left: 0;
   }
@@ -1632,6 +1659,10 @@ a {
 
   .header__extra {
     display: block;
+  }
+
+  .header__dopTop {
+    height: 50px;
   }
 
   .header__extra {
@@ -1686,12 +1717,6 @@ a {
   .button__buy {
     font-size: 3.7rem;
   }
-
-  .button__icon {
-    width: 4rem;
-    height: 4rem;
-    margin-left: 15px;
-  }
 }
 
 @media screen and (min-width: 560px) {
@@ -1735,9 +1760,9 @@ a {
 @media screen and (min-width: 660px) and (min-height: 730px) and (orientation: landscape) {
   .header__extra {
     display: block;
-    width: 70%;
-    margin-top: 20px;
-    margin-bottom: -150px;
+    width: 80%;
+    margin-top: 150px;
+    margin-bottom: -190px;
   }
 }
 
@@ -1761,6 +1786,8 @@ a {
   .header__extra {
     display: block;
     width: 60%;
+    margin-top: 40px;
+    margin-bottom: -190px;
   }
 }
 
@@ -1864,5 +1891,11 @@ a {
 @media screen and (min-height: 730px) and (orientation: landscape) {
   .footer {
     height: 28px;
+  }
+}
+
+@media screen and (min-height: 710px) and (orientation: landscape) {
+  .header__dopTop {
+    height: 60px;
   }
 }

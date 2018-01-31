@@ -1095,8 +1095,8 @@ a {
 
 .button__cancel {
   margin: 40px auto -50px;
-  font-size: 2rem;
-  font-variant: all-small-caps;
+  font-size: 1.7rem;
+  font-weight: 400;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
