@@ -836,6 +836,8 @@ a {
   .xxs( padding, 6px );
 
   margin-bottom: 10px;
+  .max-from-to-h-w( 500px, 320px, { margin: 2px auto 1px; padding: 1px });
+
   .landscape( margin-bottom, 3px);
   .landscape-h( @xxs, margin-bottom, 7px );
   .landscape-h( @xs, margin-bottom, 10px );
@@ -898,7 +900,7 @@ a {
 }
 
 .button__cancel {
-  margin: 40px auto -50px;
+  margin: 70px auto -50px;
   font-size: 1.7rem;
   font-weight: 400;
   .flex-center;
@@ -910,7 +912,17 @@ a {
   .landscape-block({ margin: 5px auto 0; height: 23px });
   .landscape-block-h(@xxs, { margin: 14px auto 0; height: 25px });
   .landscape-block-h(@xs, { margin: 23px auto 0; height: 28px });
-  .landscape-block-h(@sm, { margin: 30px auto 0; height: 30px })
+  .landscape-block-h(@sm, { margin: 30px auto 0; height: 30px });
+
+  .min-from-to-h-w( 500px, 320px, { margin-top: 80px; });
+  .xxs-h( @sm, @p, { margin-top: 130px; });
+  .tiny-h( @xsm, @p, { margin-top: 85px });
+
+  .landscape-h( @xxs, margin-top, 85px );
+  .landscape-h( @xs, margin-top, 105px );
+  .landscape-h( @sm, margin-top, 85px );
+  .landscape-h( 715px, margin-top, 65px );
+  .landscape-h( @lg, margin-top, 150px );
 }
 
 .wrapper__form {
@@ -921,6 +933,8 @@ a {
   .column;
   .items-center;
   .justify-center;
+
+  .max-from-to-h-w( 500px, 320px, { .justify-start; });
 
   .landscape( margin-top, 1px );
   .landscape-h(@xxs, margin-top, 0 );

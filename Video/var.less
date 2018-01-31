@@ -706,6 +706,16 @@
   }
 }
 
+.max-from-to-h-w(@max_height, @max_width, @content){
+  @media screen and (max-height: @max_height) and (max-width: @max_width){
+    @content();
+  }
+}
+.min-from-to-h-w(@min_height, @min_width, @content){
+  @media screen and (min-height: @min_height) and (min-width: @min_width){
+    @content();
+  }
+}
 
 .clearfix(){
   &::after{
