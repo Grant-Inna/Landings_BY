@@ -1833,6 +1833,10 @@ a {
     height: 40px;
     padding: 5px 10px;
   }
+
+  .footer {
+    height: 35px;
+  }
 }
 
 @media screen and (min-height: 410px) and (orientation: landscape) {
@@ -1854,5 +1858,11 @@ a {
   .button__cancel {
     margin: 30px auto 0;
     height: 30px;
+  }
+}
+
+@media screen and (min-height: 730px) and (orientation: landscape) {
+  .footer {
+    height: 28px;
   }
 }
