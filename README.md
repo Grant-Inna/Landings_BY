@@ -2,9 +2,9 @@
 Testing repo for plenty of landings
 
 
-[**Adult**](https://grant-inna.github.io/Landings_BY/Adult) *in process*
+[**Adult**](https://grant-inna.github.io/Landings_BY/Adult) *ready*
 
-[**Video**](https://grant-inna.github.io/Landings_BY/Video) *coming soon*
+[**Video**](https://grant-inna.github.io/Landings_BY/Video) *in process*
 
 [**Sport**](https://grant-inna.github.io/Landings_BY/Sporte) *coming soon*
 
