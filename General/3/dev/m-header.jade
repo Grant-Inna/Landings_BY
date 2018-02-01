@@ -1,0 +1,23 @@
+mixin header ( text, dopTop, elements )
+    .header__container
+        .header
+            case elements
+                when 'no-elem'
+                    .header__logo
+                default
+                    .header__logo
+                    .header__elements
+        .header__info Нажатием кнопки "#{ text }" абонент осуществляет подписку на интернет-ресурс &nbsp;
+            a( href="http://videomeo.by/" ) videomeo.by.
+            br
+            | &nbsp;&nbsp;Стоимость подписки: 0.20 р. с НДС в день.
+        case dopTop
+            when '+'
+                .header__dopTop
+                .header__extra
+                    .relation
+                    #infoScreen.relation__content
+            when '-'
+                .header__extra
+                    .relation
+                    #infoScreen.relation__content
