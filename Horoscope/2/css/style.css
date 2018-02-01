@@ -1376,12 +1376,10 @@ a {
 /* animation */
 
 .fadeOut {
-  -webkit-animation: out .6s;
-          animation: out .6s;
+  -webkit-animation: out .5s;
+          animation: out .5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-timing-function: cubic-bezier(1, -0.11, 0.76, 0.76);
-          animation-timing-function: cubic-bezier(1, -0.11, 0.76, 0.76);
 }
 
 @-webkit-keyframes out {
@@ -1417,8 +1415,6 @@ a {
           animation: in .6s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-timing-function: cubic-bezier(0.34, 0.43, 1, 0.35);
-          animation-timing-function: cubic-bezier(0.34, 0.43, 1, 0.35);
 }
 
 @-webkit-keyframes in {
@@ -1426,6 +1422,12 @@ a {
     -webkit-transform: scale(0);
             transform: scale(0);
     opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    opacity: .9;
   }
 
   100% {
@@ -1440,6 +1442,12 @@ a {
     -webkit-transform: scale(0);
             transform: scale(0);
     opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    opacity: .9;
   }
 
   100% {
