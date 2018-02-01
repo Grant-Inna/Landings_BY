@@ -1037,6 +1037,7 @@ a {
   min-width: 240px;
   max-width: 380px;
   font-size: 1.7rem;
+  border-radius: 4px;
   padding: 3px;
   margin-bottom: 10px;
   -webkit-transition: 0.05s ease-in-out;
@@ -1272,9 +1273,8 @@ a {
 }
 
 .checked__textContainer {
-  background: #ffd801;
+  background: rgba(99, 99, 99, 0.8);
   color: #000;
-  border-radius: 4px;
 }
 
 .checked__label {
