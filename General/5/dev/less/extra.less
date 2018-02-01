@@ -6,7 +6,7 @@
   background-size: contain;
   height: 0;
   margin-top: 3px;
-  .xxs-o( @p, height, 60px);
+  .xs-o( @p, height, 60px);
   .xxs-h( @sm, @p, { height: 70px });
   .sm-h( @md, @p, { height: 80px });
   .landscape-h( 710px, height, 100px)
@@ -22,7 +22,7 @@
 @height-header-extra: 50px;
 @margin-top-header-extra: 20px;
 @border-r-header-extra: 3px;
-@margin-bottom-header-extra: @margin-top-header-extra * -1;
+@margin-bottom-header-extra: -25%;
 @box-shadow-header-extra: none;
 
 .header__extra {
@@ -33,15 +33,15 @@
   min-height: @height-header-extra;
   border-radius: @border-r-header-extra;
 
-  margin: @margin-top-header-extra auto -55%;
+  margin: @margin-top-header-extra auto @margin-bottom-header-extra;
 
   background: @back-header-extra;
   background-size: @back-size-header-extra;
   box-shadow: @box-shadow-header-extra;
 
   .xxs-h(@sm, @p, { // iPhone 6
-    margin-top: 20px;
-    //margin-bottom: -140px;
+    margin-top: 8px;
+    margin-bottom: -20%;
     width: 90%;
   });
   .xxs-h(@lg, @p, { // iPhone X

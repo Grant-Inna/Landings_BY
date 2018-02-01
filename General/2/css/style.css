@@ -1005,6 +1005,11 @@ a {
           justify-content: space-between;
 }
 
+.header__container {
+  height: auto;
+  min-height: 80px;
+}
+
 .header {
   height: 45px;
   /* portrait */
@@ -1037,6 +1042,7 @@ a {
   min-width: 240px;
   max-width: 380px;
   font-size: 1.7rem;
+  border-radius: 4px;
   padding: 3px;
   margin-bottom: 10px;
   -webkit-transition: 0.05s ease-in-out;
@@ -1274,9 +1280,8 @@ a {
 }
 
 .checked__textContainer {
-  background: #1b9ef4;
+  background: rgba(99, 99, 99, 0.8);
   color: #ffffff;
-  border-radius: 5px;
 }
 
 .checked__label {
@@ -1779,7 +1784,9 @@ a {
     margin: 2px auto 1px;
     padding: 1px;
   }
+}
 
+@media screen and (max-height: 450px) and (max-width: 320px) {
   .wrapper__form {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
