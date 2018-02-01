@@ -1,0 +1,19 @@
+doctype
+html
+    head
+        include ../../m-head
+        +head()
+    body.lbody
+        include ../../top-form
+        .wrapper
+            include m-header
+            +header( 'ЧИТАТЬ', '-' )
+            .wrapper__form
+                include ../../text-check
+                include m-allInButton
+                +button( 'ЧИТАТЬ', '+' )
+                button.button__cancel( onclick="document.getElementById('frm-cancel').submit(); return false;" ) Отмена
+            include ../../footer
+        script document.getElementById('mainCheckbox').addEventListener('click', function () { document.getElementById('firstScreen').classList.add('fadeOut'); document.getElementById('submitButton').classList.add('fadeIn'); document.getElementById('checked__textContainer').classList.add('fadeIn'); document.getElementById('infoScreen').classList.add( 'checked' )}); document.getElementById('secondCheckbox').addEventListener('click', function () { if(!document.getElementById('secondCheckbox').checked){ document.getElementById('submitButton').setAttribute( 'disabled', 'disabled' )}else{ document.getElementById('submitButton').removeAttribute( 'disabled', 'disabled' )} });
+
+
