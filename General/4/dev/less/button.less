@@ -44,13 +44,13 @@
 @box-shadow-button-container: 13px 23px 103px 0px rgba(255, 174, 1, 0.47);
 
 .button__container {
-  background: transparent;
+  background: @back-button-container-image;
   background-size: @back-size-button-container;
 
   border: @border-button-container;
   border-radius: @border-r-button-container;
 
-  box-shadow: transparent;
+  box-shadow: @box-shadow-button-container;
 
 }
 
@@ -70,7 +70,7 @@
 @box-shadow-button-check: @box-shadow-button-container;
 
 .button__check {
-  background: @back-button-container;
+  //background: @back-button-container;
   background-size: @back-size-button-check;
   z-index: 10;
 
@@ -82,7 +82,7 @@
   border-radius: @border-r-button-container;
   color: @color-button-check;
 
-  box-shadow: @box-shadow-button-container;
+  //box-shadow: @box-shadow-button-container;
 
 }
 .check__label {
@@ -106,8 +106,8 @@
   border-radius: @border-r-button-container;
   opacity: 0;
 
-  background: @back-button-container;
-  box-shadow: @box-shadow-button-container;
+  //background: @back-button-container;
+  //box-shadow: @box-shadow-button-container;
 }
 
 @back-button-icon-image: url('../images/button-icon.png');
