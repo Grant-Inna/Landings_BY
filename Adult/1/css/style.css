@@ -1261,8 +1261,7 @@ a {
 .checked__textContainer {
   background: #ff034a;
   color: #ffffff;
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
+  border-radius: 3px;
 }
 
 .checked__label {
@@ -1329,8 +1328,7 @@ a {
           justify-content: center;
   font-size: 3.1rem;
   color: #ffffff;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
+  border-radius: 50px;
   opacity: 0;
 }
 
