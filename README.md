@@ -10,7 +10,7 @@ Testing repo for plenty of landings
 
 [**News**](https://grant-inna.github.io/Landings_BY/News) *coming soon*
 
-[**Horoscope**](https://grant-inna.github.io/Landings_BY/Horoscope) *coming soon*
+[**Horoscope**](https://grant-inna.github.io/Landings_BY/Horoscope) *in process*
 
 [**Host**](https://grant-inna.github.io/Landings_BY/Host) *coming soon*
 
