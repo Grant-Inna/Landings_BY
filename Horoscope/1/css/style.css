@@ -1133,18 +1133,18 @@ a {
 /* button */
 
 .button__container {
-  background: transparent;
+  background: #4776cb;
   background-size: 100% 100%;
   border: 0 transparent;
   border-radius: 50px;
-  -webkit-box-shadow: transparent;
-          box-shadow: transparent;
+  -webkit-box-shadow: 10px 17px 62px 0px rgba(73, 117, 202, 0.43);
+          box-shadow: 10px 17px 62px 0px rgba(73, 117, 202, 0.43);
 }
 
 /* first screen */
 
 .button__check {
-  background: #4776cb center no-repeat;
+  background: inherit;
   background-size: 100% 100%;
   z-index: 10;
   border: none;
@@ -1178,9 +1178,6 @@ a {
   color: #fff;
   border-radius: 50px;
   opacity: 0;
-  background: #4776cb center no-repeat;
-  -webkit-box-shadow: 10px 17px 62px 0px rgba(73, 117, 202, 0.43);
-          box-shadow: 10px 17px 62px 0px rgba(73, 117, 202, 0.43);
 }
 
 .button__icon {

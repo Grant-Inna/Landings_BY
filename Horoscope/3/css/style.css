@@ -1115,6 +1115,7 @@ a {
 
 .checked__textContainer {
   color: #fff;
+  background: #ffa846;
 }
 
 .checked__label {
@@ -1138,19 +1139,17 @@ a {
 /* button */
 
 .button__container {
-  background: transparent;
+  background: #f46200;
   background-size: 100% 100%;
   border: 0 transparent;
   border-radius: 6px;
-  -webkit-box-shadow: transparent;
-          box-shadow: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 /* first screen */
 
 .button__check {
-  background: #f46200 center no-repeat;
-  background-size: 100% 100%;
   z-index: 10;
   border: none;
   /*box-sizing: border-box;
@@ -1158,8 +1157,6 @@ a {
   padding-bottom: @border-size-button-container;*/
   border-radius: 6px;
   color: #fff;
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 
 .check__label {
@@ -1183,9 +1180,6 @@ a {
   color: #fff;
   border-radius: 6px;
   opacity: 0;
-  background: #f46200 center no-repeat;
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 
 /*
