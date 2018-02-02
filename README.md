@@ -10,17 +10,17 @@ Testing repo for plenty of landings
 
 [**News**](https://grant-inna.github.io/Landings_BY/News) *coming soon*
 
-[**Horoscope**](https://grant-inna.github.io/Landings_BY/Horoscope) *in process*
+[**Horoscope**](https://grant-inna.github.io/Landings_BY/Horoscope) *ready*
 
 [**Host**](https://grant-inna.github.io/Landings_BY/Host) *coming soon*
 
 [**Games**](https://grant-inna.github.io/Landings_BY/Games) *coming soon*
 
-[**Music**](https://grant-inna.github.io/Landings_BY/Music) *coming soon*
+[**Music**](https://grant-inna.github.io/Landings_BY/Music) *in process*
 
 [**Dating**](https://grant-inna.github.io/Landings_BY/Dating) *coming soon*
 
-[**General**](https://grant-inna.github.io/Landings_BY/General) *in process*
+[**General**](https://grant-inna.github.io/Landings_BY/General) *ready*
 
 [**Weather**](https://grant-inna.github.io/Landings_BY/Weather) *coming soon*
 
