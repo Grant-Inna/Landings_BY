@@ -1070,7 +1070,7 @@ a {
   top: 0;
   left: 0;
   background: url('../images/first-screen.png') center no-repeat;
-  background-size: auto 85%;
+  background-size: 90%;
 }
 
 .checked {
