@@ -1,6 +1,8 @@
 
 .checked__textContainer {
   color: @color-button-buy;
+
+  background: @back-button-container-image + 70;
 }
 
 @back-small-box-image: url('../images/back-small-box.png');
@@ -43,13 +45,13 @@
 @box-shadow-button-container:  none;
 
 .button__container {
-  background: transparent;
+  background: @back-button-container-image;
   background-size: @back-size-button-container;
 
   border: @border-button-container;
   border-radius: @border-r-button-container;
 
-  box-shadow: transparent;
+  box-shadow: @box-shadow-button-container;
 
 }
 
@@ -69,8 +71,6 @@
 @box-shadow-button-check: @box-shadow-button-container;
 
 .button__check {
-  background: @back-button-container;
-  background-size: @back-size-button-check;
   z-index: 10;
 
   border: none;
@@ -81,7 +81,6 @@
   border-radius: @border-r-button-container;
   color: @color-button-check;
 
-  box-shadow: @box-shadow-button-container;
 
 }
 .check__label {
@@ -104,9 +103,6 @@
 
   border-radius: @border-r-button-container;
   opacity: 0;
-
-  background: @back-button-container;
-  box-shadow: @box-shadow-button-container;
 }
 /*
 @back-button-icon-image: url('../images/button-icon.png');
