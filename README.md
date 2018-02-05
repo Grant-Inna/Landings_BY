@@ -6,7 +6,7 @@ Testing repo for plenty of landings
 
 [**Video**](https://grant-inna.github.io/Landings_BY/Video) *ready*
 
-[**Sport**](https://grant-inna.github.io/Landings_BY/Sporte) *coming soon*
+[**Sport**](https://grant-inna.github.io/Landings_BY/Sporte) *in process*
 
 [**News**](https://grant-inna.github.io/Landings_BY/News) *coming soon*
 
@@ -16,9 +16,9 @@ Testing repo for plenty of landings
 
 [**Games**](https://grant-inna.github.io/Landings_BY/Games) *coming soon*
 
-[**Music**](https://grant-inna.github.io/Landings_BY/Music) *in process*
+[**Music**](https://grant-inna.github.io/Landings_BY/Music) *ready*
 
-[**Dating**](https://grant-inna.github.io/Landings_BY/Dating) *coming soon*
+[**Dating**](https://grant-inna.github.io/Landings_BY/Dating) *ready*
 
 [**General**](https://grant-inna.github.io/Landings_BY/General) *ready*
 
