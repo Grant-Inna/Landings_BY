@@ -12,9 +12,9 @@ Testing repo for plenty of landings
 
 [**Horoscope**](https://grant-inna.github.io/Landings_BY/Horoscope) *ready*
 
-[**Host**](https://grant-inna.github.io/Landings_BY/Host) *coming soon*
+[**Host**](https://grant-inna.github.io/Landings_BY/Host) *in process*
 
-[**Games**](https://grant-inna.github.io/Landings_BY/Games) *in process*
+[**Games**](https://grant-inna.github.io/Landings_BY/Games) *ready*
 
 [**Music**](https://grant-inna.github.io/Landings_BY/Music) *ready*
 
