@@ -6,7 +6,7 @@ Testing repo for plenty of landings
 
 [**Video**](https://grant-inna.github.io/Landings_BY/Video) *ready*
 
-[**Sport**](https://grant-inna.github.io/Landings_BY/Sporte) *in process*
+[**Sport**](https://grant-inna.github.io/Landings_BY/Sport) *ready*
 
 [**News**](https://grant-inna.github.io/Landings_BY/News) *ready*
 
