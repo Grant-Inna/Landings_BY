@@ -6,13 +6,13 @@ Testing repo for plenty of landings
 
 [**Video**](https://grant-inna.github.io/Landings_BY/Video) *ready*
 
-[**Sport**](https://grant-inna.github.io/Landings_BY/Sporte) *coming soon*
+[**Sport**](https://grant-inna.github.io/Landings_BY/Sporte) *in process*
 
-[**News**](https://grant-inna.github.io/Landings_BY/News) *coming soon*
+[**News**](https://grant-inna.github.io/Landings_BY/News) *ready*
 
 [**Horoscope**](https://grant-inna.github.io/Landings_BY/Horoscope) *ready*
 
-[**Host**](https://grant-inna.github.io/Landings_BY/Host) *in process*
+[**Host**](https://grant-inna.github.io/Landings_BY/Host) *ready*
 
 [**Games**](https://grant-inna.github.io/Landings_BY/Games) *ready*
 
