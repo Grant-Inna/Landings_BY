@@ -1,6 +1,7 @@
 # Landings for BY MTC
 Testing repo for plenty of landings
 
+For mobile devices only
 
 [**Adult**](https://grant-inna.github.io/Landings_BY/Adult)
 
